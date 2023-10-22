@@ -1,0 +1,27 @@
+# question 1
+# I am building some very high quality chairs and need exactly four nails for each chair.
+# I've written a program to calculate how many nails I need to buy to build these chairs.
+chairs = 15
+nails = 4
+total_nails = chairs * nails
+message = "I need to buy {} nails".format(total_nails)
+print(message)
+# fix:
+# chairs = 15 not "15"
+# print (message), because we stated in the previous line what it means
+
+# question 2
+my_name = "Penelope"
+my_age = 29
+message = "My name is {} and I am {} years old".format(my_name, my_age)
+print(message)
+# fix: add " to Penelope
+
+# question 3
+eggs_in_box = 6
+eggs_for_omelette = 4
+boxes_of_eggs = 10
+total_eggs = boxes_of_eggs * eggs_in_box
+omelette = total_eggs // eggs_for_omelette
+message = "You can make {} omelettes with {} boxes of eggs".format(omelette, boxes_of_eggs)
+print(message)
