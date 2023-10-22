@@ -1,0 +1,44 @@
+# think of range(5) as a collection of five digits in a box: 0,1,2,3,4 starting from a 0
+# FOR loop would iterate through every digit
+for number in range(5):
+    print(number)
+
+# think of any word as a collection of characters that we can iterate over
+for character in "Banana":
+    print(character)
+
+#think of any word as a collection of characters that we can iterate over
+for character in "Banana":
+    print("<" + character + ">")
+
+#think of this example as a box with words, we are doing an action for each word
+for name in ["Mary", "Ranjit", "Fatima"]:
+    print(name)
+
+for number in range(5):
+    print("executing FOR LOOP - run No {}".format(number + 1))
+
+total = 0
+print("***This statement is OUTSIDE THE LOOP")
+print("Before the loop executes, our TOTAL is equal to  = ", total, "\n")
+for number in range(3):
+    print("This is loop execution for digit: " + str(number) + "inside the loop \n")
+    print("Updating total...(+1) \n")
+    total = total + 1
+print("---------------------------")
+print("***This statement is OUTSIDE the loop now")
+print("The final TOTAL value is: " + str(total))
+
+# while loop
+store_capacity = 5 #
+while store_capacity > 0:
+    print("Please come in. Spaces available:" + str(store_capacity))
+    store_capacity = store_capacity - 1
+print("\nPlease wait for someone to exit the store.")
+
+#example infinite "while loop" that runs forever until the memory is  blown
+#store_capacity = 10
+#while store_capacity > 0:
+   # print("Please come in. Spaces available." + str(store_capacity))
+    #store_capacity = store_capacity - 1 -----> imagine that we forgot to add this logic
+#print("\nPlease wait for someone to exit the store.")
